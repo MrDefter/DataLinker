@@ -45,7 +45,6 @@ class Authorization(QMainWindow):
         self.input_password.setStyleSheet("font-size: 18px; color: #808080;")
         self.input_password.setPlaceholderText("Введите пароль")
 
-        print(self.input_password.text())
         # Создание кнопки
         button_login = QPushButton("Вход", self)
         button_login.setGeometry(self.config_widgets.center_widget_x(self, 200), self.config_widgets.center_widget_y(self, 50)+100, 200, 50) 
@@ -61,7 +60,6 @@ class Authorization(QMainWindow):
             self.main_menu = MainMenu() 
             self.main_menu.show()
             window.hide()
-
 
 
 # Окно главного меню
@@ -82,6 +80,7 @@ class MainMenu(QMainWindow):
         self.setGeometry(0, 0, 1280, 720)
         self.setFixedSize(1280, 720)
         self.config_widgets.center_window(self)
+
 
 if __name__ == '__main__':
 
